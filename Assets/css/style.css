@@ -1,9 +1,9 @@
 :root {
     --black: #070600;
     --pink: #ea536f;
-
+/* although never used, I declared the color variables just in case */
 }
-
+/* setting the font family and color of the text for the whole doc */
 * {
  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  color: #070600;
@@ -11,7 +11,6 @@
 
 h1 {
     font-size: 35px;
-    display: block;
 }
 
 header {
@@ -20,7 +19,7 @@ header {
     height: 75px;
     background: #070600;
 }
-
+/* just a div for the background of the header */
 #tryalign {
     background-color: #070600;
     
@@ -43,7 +42,7 @@ header > ul {
 
 }
 
-
+/* list at the top */
 header ul > li {
     color: #ea526f;
     font-style: italic;
@@ -54,13 +53,14 @@ header ul > li {
     display: flex;
 
 }
-
+/* this is what #subtitle and the h3 element use for position:absolute */
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/* the topright "subtitle"  */
 #subtitle {
     position: absolute;
     bottom: 8px;
@@ -72,6 +72,7 @@ header ul > li {
     border-width: 5px 0px 0px 5px;
 }
 
+/* the meat of the doc, in here are the "about me", "work" and "contact me formatting */
 section {
     display: flex;
     justify-content: space-between;
@@ -79,6 +80,9 @@ section {
 
 }
 
+/* all the "side" elements, need to fix the bottom h1 tag to 
+have the text not be all on one line
+*/
 .h1main {
     display: flex;
     flex-wrap: wrap;
@@ -88,20 +92,20 @@ section {
     padding-right: 1%;
 }
 
-
+/* lorem ipsum */
 p {
     display: inline-block;
     font-size: 15px;
     line-height: 3vh;
     margin-left: 2%;
 }
-
+/* div for the one huge jumbotron */
 #thebigdiv {
     display: flex;
     width: 75%;
     flex-wrap: wrap;
 }
-
+/* the one huge jumbotron */
 #thebigone {
     border-style: solid;
     border-width: 2%;
@@ -109,14 +113,14 @@ p {
     margin-bottom: 1%;
 
 }
-
+/* div for the small imgs */
 .thelildiv {
  display: flex;
  width: 75%;
  flex-wrap: wrap;
  
 }
-
+/* this is the 4 smaller image img elements */
 .imgbox {
     border-style: solid;
     border-width: 2%;
@@ -124,7 +128,7 @@ p {
     margin-bottom: 1%;
     margin-right: 10px;
 }
-
+/* this is the "text here, more text"on the image elements. */
 h3 {
     position: absolute;
     bottom: 18px;
@@ -139,7 +143,7 @@ main section > ul {
     width: 50%;
 
 }
-
+/* list formatting at the bottom */
 main section ul > li {
     display: inline;
     justify-content: space-evenly;
@@ -147,15 +151,20 @@ main section ul > li {
     text-decoration: underline;
 }
 
+/* to fit in with the format of header, though change this later as 
+the h1 elements are now also a elements
+*/
 a {
     color: #ea526f;
 }
 
+/* adds a red dropshadow and changes cursor to pointer when hovered */
 .imgbox:hover {
     cursor: pointer;
     box-shadow: .5rem .5rem 1rem #e23 ;
   }
   
+  /* media elements for when the window is downsized */
   @media screen and (max-width:1068px) {
 
   }
