@@ -1,7 +1,7 @@
 :root {
     --black: #070600;
     --pink: #ea536f;
-    
+
 }
 
 * {
@@ -17,7 +17,7 @@ h1 {
 header {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 75px;
     background: #070600;
 }
 
@@ -39,7 +39,8 @@ header > ul {
     color: #ea526f;
     display: flex;
     align-items: center;
-    border: 10px;
+    margin-right: 10px;
+
 }
 
 
@@ -71,49 +72,94 @@ header ul > li {
     border-width: 5px 0px 0px 5px;
 }
 
-main div section > h1 {
-    padding-left: 25px;
+section {
     display: flex;
+    justify-content: space-between;
+    margin: 2% 10% 2% 2%;
+
+}
+
+.h1main {
+    display: flex;
+    flex-wrap: wrap;
     text-align: right;
     border-style: solid;
     border-width: 0px 5px 0px 0px;
-    width: 30%;
+    padding-right: 1%;
 }
+
 
 p {
-    display: flex;
-    flex-direction: column;
-    border: 10px;
-    text-align: right;
+    display: inline-block;
     font-size: 15px;
     line-height: 3vh;
-
+    margin-left: 2%;
 }
+
+#thebigdiv {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
 #thebigone {
-    float: right;
-    display: flex;
-    border: 10px;
-    font-size: 15px;
+    border-style: solid;
+    border-width: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+
 }
+
+.thelildiv {
+ display: flex;
+ width: 75%;
+ flex-wrap: wrap;
+ 
+}
+
 .imgbox {
-    float: right;
-    display: flex;
-    border: 10px;
-    font-size: 15px;
+    border-style: solid;
+    border-width: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    margin-right: 10px;
 }
 
-main div section ul > li {
-    text-align: right;
-    display: flex;
-    flex-direction: row-reverse;
-    
-    justify-content: space-between;
-    text-decoration: underline;
-    font-size: 15px;
-    padding-right: 5px;
+h3 {
+    position: absolute;
+    bottom: 18px;
+    left: 12px;
+    width: 75px;
+    height: 37px;
+    background: #ea526f;
+}
 
+main section > ul {
+    display: flex;
+    width: 50%;
+
+}
+
+main section ul > li {
+    display: inline;
+    justify-content: space-evenly;
+    margin-right: 6%;
+    text-decoration: underline;
 }
 
 a {
     color: #ea526f;
 }
+
+.imgbox:hover {
+    cursor: pointer;
+    box-shadow: .5rem .5rem 1rem #e23 ;
+  }
+  
+  @media screen and (max-width:1068px) {
+
+  }
+
+  @media screen and (max-width:500px) {
+
+  }
