@@ -20,7 +20,7 @@ header {
     
 }
 
-header  > h1 {
+header > h1 {
     background-color: #ea526f;
     padding-left: 25px;
     padding-right: 15px;
@@ -46,4 +46,44 @@ header ul > li {
     font-size: 20px;
     display: flex;
 
+}
+
+main div section > h1 {
+    padding-left: 25px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main div section div > p {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    border: 10px;
+    font-size: 15px;
+    line-height: 3vh;
+}
+#thebigone {
+    float: right;
+    display: flex;
+    border: 10px;
+    font-size: 15px;
+}
+.imgbox {
+    float: right;
+    display: flex;
+    border: 10px;
+    font-size: 15px;
+}
+
+main div section ul > li {
+    float: right;
+    display: flex;
+    border: 10px;
+    font-size: 15px;
+}
+
+a {
+    color: #ea526f;
 }
